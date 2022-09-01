@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head.ejs'); %> 
+</head>
+<body>
+    <%-include("./partials/header.ejs")%>
+
+    <div class="Sign_form">
+        <form method = "post" action = "/post/registration">
+            <div class ="Sign_form_section">
+
+                <label>Введите имя</label>
+                <input type = "text" name = "name">
+            </br>
+
+                <label>Введите фамилию</label>
+                <input type = "text" name = "surname">
+            </br>
+                <label>Введите почту</label>
+                <input type = "text" name = "mail">
+            </br>
+            <label>Введите никнейм</label>
+                <input type = "text" name = "nickname">
+            </br>
+
+                <label>Введите пароль</label>
+                <input type = "text" name = "password">
+            </br>
+                <button type = "submit">Зарегистрироваться</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>

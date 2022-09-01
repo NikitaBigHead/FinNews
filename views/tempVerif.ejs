@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("./partials/head.ejs")  %> 
+    <script> sessionStorage.setItem("token",<%= token%>);</script>
+</head>
+<body>
+    <%- include("./partials/header.ejs")  %> 
+    <div class = "theNew">
+        <%- data %> 
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head.ejs'); %> 
+</head>
+<body>
+    <%-include("./partials/header.ejs")%>
+    <div class="Sign_form">
+        <form method = "post" action = "/post/login">
+            <div class ="Sign_form_section">
+                <label>Введите почту, никнейм</label>
+                <input type = "text" name = "login">
+            </br>
+                <label>Введите пароль</label>
+                <input type = "text" name = "password">
+            </br>
+                <button type = "submit">Войти</button>
+                <a class ="reg" href="/reg">Регистрация</a>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head.ejs'); %> 
+</head>
+<body>
+    <%-include("./partials/header.ejs")%>
+    <form method = "post" action = "/post/predloshka">
+        <div class = "textArea">
+            <label>Ваша категория</label>
+            <select name ="category">
+                <option selected value = "nft">НФТ</option>
+                <option value = "crypto">КРИПТА</option>
+                <option value = "sec">Ценные бумаги</option>
+            </select>
+            <label>Ваш заголовок</label>
+            <input name = "head">
+            <label>Ваша статья</label>
+            <textarea name = "body"></textarea>
+            <button type = "submit">Отправить</button>
+        </div>
+    </form>
+</body>
+</html>

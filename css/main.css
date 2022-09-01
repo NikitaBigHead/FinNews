@@ -1,0 +1,235 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+* {
+	box-sizing: border-box;
+}
+/*Это index*/
+body{
+  background-color: #D4A7FF;
+}
+
+a{
+  color:black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: gold;
+  color:white;
+}
+
+.header_section{
+  display: flex;
+  align-items: center;
+}
+
+.header_item{
+  padding: 10px 15px;
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+.header_item:hover{
+  background-color: #0A7CD5;
+  border-radius: 4px;
+}
+
+.headerlogo{
+  font-weight: bold;
+  font-size: 30px;
+  background-color: #FF540C;
+  border-radius: 4px;
+  padding: 10px 15px;
+  font-size: 20px;
+  margin-left: 5px;
+}
+.headerlogo a{
+  color: white;
+}
+
+.News{
+  padding: 10px;
+}
+.News .News_section{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.News_section div{
+  background-color: #FAF9DD;
+  margin: 10px;
+  width: 100%;
+  height: 300px;
+  border-radius: 4px;
+}
+
+/*Это профиль*/
+
+.profile {
+  display: flex;
+  justify-content: center;
+  background-color: #FAF9DD;
+  margin: 50px auto;
+  width: 45%;
+  padding:50px 0 100px 0;
+  border-radius: 4px;
+}
+.photo{
+  border: solid black 1px;
+  border-radius: 2px;
+}
+
+
+/*Это логин*/
+.Sign_form_section{
+  display: flex;
+  flex-direction: column;
+  background-color: #FAF9DD;
+  justify-content: center;
+  width: 40%;
+  margin: 10% auto;
+
+  align-items: center;
+  border-radius: 4px;
+  padding: 15px;
+}
+a.reg{
+  color: #0A7CD5;
+  text-decoration: underline;
+}
+
+/*Приветсвие*/
+
+.greeting{
+  width: 70%;
+  margin: 5% auto;
+  align-items: center;
+}
+.greeting_section{
+  background-color: #FAF9DD;
+  margin: 10px;
+  border-radius: 4px;
+  padding:50px;
+}
+
+.theNew{
+  background-color: #FAF9DD;
+  justify-content: center;
+  margin: 20px auto;
+  width: 80%;
+  height: 500px;
+  border-radius: 4px;
+  padding: 20px 50px;
+}
+
+
+.ElActive{
+  background-color: #0A7CD5;
+  border-radius: 4px;
+}
+.disabled{
+  display: none;
+}
+
+/*
+Предложка
+*/
+.textArea{
+  background-color: #FAF9DD;
+  width: 80%;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  border-radius:4px ;
+}
+.textArea textarea{
+  height: 50vh;
+  resize: none;
+}
+
+.Items{
+  padding: 10px;
+}

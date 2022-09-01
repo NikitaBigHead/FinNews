@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head.ejs'); %> 
+</head>
+<body>
+    <%- include('./partials/header.ejs'); %> 
+
+    <div class="greeting">
+        <div class="greeting_section about">
+            <h1>Информация о сайте</h1>
+            <p>Этот сайт сделан Кузьмином Никитой. Это не понятно какая попытка сделать что-то прикольное. </p>
+        </div>
+        
+        <div class="greeting_section update_info">
+            <%= timeTravel%>
+        </div>
+    </div>
+</body>
+</html>
